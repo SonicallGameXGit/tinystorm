@@ -264,3 +264,4 @@ pub mod texture;
 
 pub use glfw;
 pub use gl;
+pub use nalgebra;
