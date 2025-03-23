@@ -179,6 +179,32 @@
 //! , gl::TRIANGLE_FAN);
 //! ```
 //! 
+//! #### If you want to use indices in your mesh, just use ``IndexedMesh`` instead and add your indices as the first argument.
+//! 
+//! ```rust
+//! use tinystorm::mesh::{IndexedMesh, Layout};
+//! 
+//! /* Indices visualized:
+//!       * 4
+//!      / \
+//!     /   \
+//!   3 *---* 2
+//!     |   |
+//!   0 *---* 1
+//!  */
+//! let mesh = IndexedMesh::new::<f32>(&[
+//!     0, 1, 3, // Bottom-left triangle of the wall
+//!     2, 3, 1, // Top-right triangle of the wall
+//!     3, 2, 4, // Roof triangle
+//! ], &[
+//!     -0.5, -0.5,
+//!      0.5, -0.5,
+//!      0.5,  0.5,
+//!     -0.5,  0.5,
+//!      0.0,  1.0,
+//! ], &Layout::basic_2d(), gl::TRIANGLES);
+//! ```
+//! 
 //! ### Rendering the mesh
 //! To render the mesh you can just call ``yourmesh.draw();``  
 //!   

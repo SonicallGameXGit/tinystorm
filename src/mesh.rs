@@ -722,7 +722,7 @@ impl IndexedMesh {
 
     /// Creates an indexed mesh with your indices, vertices, custom vertex layout and render mode.
     /// # Example
-    /// ```
+    /// ```rust
     /// /* Indices visualized:
     ///       * 4
     ///      / \
@@ -731,7 +731,7 @@ impl IndexedMesh {
     ///     |   |
     ///   0 *---* 1
     ///  */
-    /// let mesh = Mesh::new::<f32>(&[
+    /// let mesh = IndexedMesh::new::<f32>(&[
     ///     0, 1, 3, // Bottom-left triangle of the wall
     ///     2, 3, 1, // Top-right triangle of the wall
     ///     3, 2, 4, // Roof triangle
