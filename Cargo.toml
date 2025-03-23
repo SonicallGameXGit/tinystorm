@@ -1,6 +1,6 @@
 [package]
 name = "tinystorm"
-version = "0.0.0"
+version = "0.0.1"
 edition = "2024"
 authors = ["OxygenSE sasha.ambartsumov@gmail.com"]
 description = "A simple but powerful framework designed primarily for building simple testing low-level games."
