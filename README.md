@@ -18,7 +18,7 @@ Add the following to your `Cargo.toml`:
 
 ```toml
 [dependencies]
-tinystorm = "0.1.0"
+tinystorm = "0.0.1"
 ```
 
 ---
